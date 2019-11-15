@@ -152,7 +152,7 @@ void parseInput(void)
     while((control = getc(stdin)) != EOF ) //Checks for EOF, but also takes input once
     {
         here:
-        charToInt = control - '0'; //Extracts int CHARACTER from control, not ASCII value
+        charToInt = control - '0'; // Extracts int CHARACTER from control, not ASCII value
         if (countControlUses == 0)
         {
             if (charToInt < 0 || charToInt > MAX) //control=getc been has not been dealt with yet
